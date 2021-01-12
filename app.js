@@ -1,11 +1,9 @@
-// import functions and grab DOM elements
 
 import { countsAsAYes } from './counts-as-a-yes.js'
-const quizButton = document.getElementById("quiz-button");
-const hiddenDiv = document.getElementById("hidden-div");
-// initialize state
 
-// set event listeners to update state and DOM
+const quizButton = document.getElementById("quiz-button");
+const finalScore = document.getElementById("final-score");
+
 
 quizButton.addEventListener('click', () => {
     alert("Welcome to the Ocicat quiz!");
@@ -31,11 +29,8 @@ quizButton.addEventListener('click', () => {
 
     if (!countsAsAYes(questionThree)) rightAnswers++;
 
+    const quizResults = `Thanks for taking the quiz ${firstName} ${lastName}.  You scored ${rightAnswers} out of 3!`;
 
-
-
-
-
-
+    finalScore.textContent = quizResults;
 
 });
