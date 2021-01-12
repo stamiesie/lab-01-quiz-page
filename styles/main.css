@@ -1,0 +1,23 @@
+h1 {
+    font-size: 2.0em;
+}
+
+section {
+    color: rgb(241, 241, 241);
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: #c58859b0;
+    box-shadow: 20px 20px gray;
+}
+
+.title {
+    font-size: 3.0em;
+}
+
+#quiz-button {
+   font-size: 40px;
+   background-color:rgb(235, 140, 63);
+   color: rgb(241, 241, 241);
+   border-radius: 15px;
+   box-shadow: 7px 5px rgba(146, 146, 146, 0.37);
+}

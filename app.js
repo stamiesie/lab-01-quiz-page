@@ -29,8 +29,15 @@ quizButton.addEventListener('click', () => {
 
     if (!countsAsAYes(questionThree)) rightAnswers++;
 
-    const quizResults = `Thanks for taking the quiz ${firstName} ${lastName}.  You scored ${rightAnswers} out of 3!`;
 
-    finalScore.textContent = quizResults;
+    const quizResults2 = `You scored ${rightAnswers} out of 3. Maybe get a dog ${firstName} ${lastName}?`;
+
+    const quizResults3 = `You scored ${rightAnswers} out of 3! Perfect score ${firstName} ${lastName}!`;
+
+    if (rightAnswers === 3) {
+        finalScore.textContent = quizResults3;
+    } else if (rightAnswers <= 2) {
+        finalScore.textContent = quizResults2;
+    }
 
 });
