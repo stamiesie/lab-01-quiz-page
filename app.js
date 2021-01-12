@@ -1,4 +1,6 @@
 // import functions and grab DOM elements
+
+import { countsAsAYes } from './counts-as-a-yes.js'
 const quizButton = document.getElementById("quiz-button");
 const hiddenDiv = document.getElementById("hidden-div");
 // initialize state
@@ -17,8 +19,21 @@ quizButton.addEventListener('click', () => {
     const firstName = prompt("What is your first name?");
     const lastName = prompt("What is your last name?");
 
-
     const questionOne = prompt("Do Ocicats have spots");
+
+    if (countsAsAYes(questionOne)) rightAnswers++;
+
+    const questionTwo = prompt("Do Ocicats get along with other cats");
+
+    if (countsAsAYes(questionTwo)) rightAnswers++;
+
+    const questionThree = prompt("Can Ocicats fly?");
+
+    if (!countsAsAYes(questionThree)) rightAnswers++;
+
+
+
+
 
 
 
